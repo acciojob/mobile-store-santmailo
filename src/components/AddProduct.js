@@ -1,13 +1,11 @@
 import React, { useState } from "react";
-import { useParams } from "react-router-dom";
 import { Link } from "react-router-dom";
-const EditProduct = ({ data, setData }) => {
-  const { id } = useParams();
-  const item = data[id - 1];
-  const [name, setName] = useState(item.name);
-  const [price, setPrice] = useState(item.price);
-  const [image, setImage] = useState(item.image);
-  const [description, setDescription] = useState(item.description);
+const AddProduct = ({ data, setData }) => {
+  const id = data.length + 1;
+  const [name, setName] = useState("");
+  const [price, setPrice] = useState(0);
+  const [image, setImage] = useState("");
+  const [description, setDescription] = useState("");
   return (
     <div className="edit-product-container">
       <div>
@@ -70,41 +68,25 @@ const EditProduct = ({ data, setData }) => {
         <Link to="/admin">
           <button
             onClick={() => {
-              const temp = data.map((item) => {
-                if (item.id == id) {
-                  return {
-                    id,
-                    name,
-                    price,
-                    image,
-                    description,
-                  };
-                }
-                return item;
-              });
-              setData(temp);
+              const temp = {
+                id,
+                name,
+                price,
+                image,
+                description,
+              };
+              setData([...data, temp]);
             }}
           >
             Save
           </button>
         </Link>
         <Link to="/admin">
-          <button
-            onClick={() => {
-              const temp = data.filter((item) => {
-                if (item.id != id) {
-                  return item;
-                }
-              });
-              setData(temp);
-            }}
-          >
-            Delete
-          </button>
+          <button>Go Back</button>
         </Link>
       </div>
     </div>
   );
 };
 
-export default EditProduct;
+export default AddProduct;

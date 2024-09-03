@@ -1,11 +1,11 @@
-const data = [
+const random = [
   {
     id: 1,
     name: "iPhone 12",
     description:
       "Apple iPhone 12 with 64GB Storage, A14 Bionic chip, 5G support.",
     image: "https://via.placeholder.com/150/0000FF/808080?text=iPhone+12",
-    price: "$699",
+    price: 699,
   },
   {
     id: 2,
@@ -13,7 +13,7 @@ const data = [
     description:
       "Samsung Galaxy S21 with 128GB Storage, Exynos 2100, Dynamic AMOLED 2X.",
     image: "https://via.placeholder.com/150/FF0000/FFFFFF?text=Galaxy+S21",
-    price: "$799",
+    price: 799,
   },
   {
     id: 3,
@@ -21,7 +21,7 @@ const data = [
     description:
       "Google Pixel 5 with 128GB Storage, Snapdragon 765G, 5G support.",
     image: "https://via.placeholder.com/150/00FF00/000000?text=Pixel+5",
-    price: "$699",
+    price: 699,
   },
   {
     id: 4,
@@ -29,7 +29,7 @@ const data = [
     description:
       "OnePlus 9 with 128GB Storage, Snapdragon 888, 120Hz Fluid AMOLED.",
     image: "https://via.placeholder.com/150/FFFF00/000000?text=OnePlus+9",
-    price: "$729",
+    price: 729,
   },
   {
     id: 5,
@@ -37,7 +37,7 @@ const data = [
     description:
       "Sony Xperia 1 III with 256GB Storage, Snapdragon 888, 4K HDR OLED display.",
     image: "https://via.placeholder.com/150/000000/FFFFFF?text=Xperia+1+III",
-    price: "$1,299",
+    price: 1299,
   },
   {
     id: 6,
@@ -45,7 +45,7 @@ const data = [
     description:
       "Xiaomi Mi 11 Ultra with 256GB Storage, Snapdragon 888, 120Hz AMOLED display.",
     image: "https://via.placeholder.com/150/FF00FF/000000?text=Mi+11+Ultra",
-    price: "$1,199",
+    price: 1199,
   },
   {
     id: 7,
@@ -53,7 +53,7 @@ const data = [
     description:
       "Huawei P40 Pro with 256GB Storage, Kirin 990, Leica Quad Camera.",
     image: "https://via.placeholder.com/150/800080/FFFFFF?text=P40+Pro",
-    price: "$1,099",
+    price: 1099,
   },
   {
     id: 8,
@@ -61,7 +61,7 @@ const data = [
     description:
       "Oppo Find X3 Pro with 256GB Storage, Snapdragon 888, 120Hz AMOLED display.",
     image: "https://via.placeholder.com/150/FFA500/FFFFFF?text=Find+X3+Pro",
-    price: "$1,149",
+    price: 1149,
   },
   {
     id: 9,
@@ -69,7 +69,7 @@ const data = [
     description:
       "Asus ROG Phone 5 with 128GB Storage, Snapdragon 888, 144Hz AMOLED display.",
     image: "https://via.placeholder.com/150/008080/FFFFFF?text=ROG+Phone+5",
-    price: "$999",
+    price: 999,
   },
   {
     id: 10,
@@ -77,8 +77,8 @@ const data = [
     description:
       "Motorola Edge+ with 256GB Storage, Snapdragon 865, 108MP Camera.",
     image: "https://via.placeholder.com/150/FF6347/FFFFFF?text=Edge+Plus",
-    price: "$899",
+    price: 899,
   },
 ];
 
-export default data;
+export default random;

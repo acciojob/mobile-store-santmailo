@@ -1,11 +1,10 @@
 import React from "react";
 import { useParams } from "react-router-dom";
-import data from "./data";
 import { Link } from "react-router-dom";
-const Product = () => {
+const Product = ({ data }) => {
   const { id } = useParams();
   const item = data[id - 1];
-  console.log(item);
+
   return (
     <div className="product-container-c">
       <div className="product-img-container-c">

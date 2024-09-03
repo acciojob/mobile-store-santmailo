@@ -1,8 +1,7 @@
 import React, { useState } from "react";
-import data from "./data";
 import { Link } from "react-router-dom";
 
-const Products = () => {
+const Products = ({ data }) => {
   const [products, setProducts] = useState(data);
   return (
     <div className="products-container">
@@ -19,7 +18,7 @@ const Products = () => {
                 <p>{item.price}</p>
               </div>
               <div>
-                <Link to={`/product/${item.id}`}>
+                <Link to={`/products/${item.id}`}>
                   <button>buy Now</button>
                 </Link>
               </div>
